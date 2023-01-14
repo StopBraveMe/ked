@@ -1,0 +1,276 @@
+<html>
+
+
+<head>
+
+  <style>
+  .menu{
+    padding: 0px;
+    margin:0px;
+    display: inline-block;
+   
+  }
+  .menu li{
+    float:left;
+    list-style:none;
+    margin:0;
+  }
+  .menu li a{
+    padding: 20px 15px;
+    display: inline-block;
+    text-decoration:none;
+    color: #ff5252;
+  }
+  .menu li:hover a{
+      background: #333;
+      color: #fff;
+  }
+  .menu li ul{
+     margin: 0;
+     padding: 0;
+  }
+  .menu li ul{
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   z-index: 100;
+  display:none;
+  }
+  .menu li:hover ul{
+  display:block;
+  }
+  .menu li ul li{
+  display:block;
+  width: 100%;
+  }
+  .menu li ul li a{
+  width: 100%;
+  }
+
+  </style>
+
+
+<h1 align="center"></h1>
+  <ul class="menu">
+    <li>
+      <a href="www.Facebook.com">Facebook</a>
+    </li>
+    <li>
+      <a href="www.Komputronik.pl">Komputronik</a>
+    </li>
+    <li>
+      <a href="www.riotgames.com">Riot</a>
+       <ul>
+        <li>
+           <a href="www.Samsung.com">Samsung</a>
+        </li>
+        <li>
+          <a href="www.Sony.com">Sony</a>
+        </li>
+       </ul>
+    </li>
+    <li>
+       <a href="www.mediaexpert.pl">Media Expert</a></li>
+    <li>
+       <a href="www.mediamarkt.pl">Media Markt</a>
+    </li>
+    <li>
+       <a href="">Matematyka</a>
+        <ul>
+         <li>
+            <a href="">Chemia</a>
+         </li>
+         <li>
+            <a href="">Fizyka</a>
+         </li>
+       </ul>
+    </li>
+    <li>
+       <a href="www.google.com">Opusc Strone</a>
+    </li>
+    </ul>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<form id="zegarek">
+<input type="text" style="font-weight:bold; background-color:ffffff; border:0; font-size:20" value="" name="pokaz" DISABLED />
+</form>
+
+
+
+
+<body>
+<h1><center>Strona Główna</center></h1>
+</body>
+
+<head>
+
+<body background="tak.png">
+
+</head>
+<head>
+<script type="text/javascript">
+function zegar()
+{
+var czas = new Date();
+godzina = czas.getHours();
+minuta = czas.getMinutes();
+sekunda = czas.getSeconds();
+
+if (minuta <= 9) {minuta = "0"+minuta;}
+if (minuta==60) {minuta= "00"}
+if (sekunda <= 9) {sekunda = "0"+sekunda;}
+if (sekunda==60) {sekunda= "00"}  
+document.forms["zegarek"].elements["pokaz"].value = godzina + ":" + minuta + ":" + sekunda;
+
+}
+setInterval("zegar()",1000);
+</script>
+
+</head>
+
+
+<head>
+
+
+
+
+</head>
+
+
+
+<body>
+
+<center><img src="yt.png" ></center>
+
+<center><button>
+<a class="btn btn-primary" href="https://www.youtube.com/">
+  Youtube
+</a>
+</button></center>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+
+
+<body>
+
+<center><img src="twitch.png"></center>
+
+<center><button>
+<a class="btn btn-primary" href="https://www.twitch.tv/">
+  Twitch
+</a>
+</button></center>
+
+
+</body>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<body>
+
+<center><img src="xkom2.png"  width="200" height="170"                 > </center>
+
+<center><button>
+<a class="btn btn-primary" href="https://www.x-kom.pl/">
+  x-kom
+</a>
+</button></center>
+
+
+</body>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+
+
+<center><img src="google.png" width="200" height="170"       >       </center>
+
+<center><button>
+<a class="btn btn-primary" href="https://www.google.com/">
+  Google
+</a>
+</button></center>
+
+
+</body>
+<br>
+<br>
+
+<head>
+<img src="spong2.gif" width="130" height="130"        >
+
+
+<h1 align="left"</h1>
+
+
+
+
+
+
+</head>
+
+<head>
+
+<center><h2>Tabela</h2></center>
+<h1 align="center"</h1>
+
+
+<table border cellspacing=5 cellpading=15  width="200"  height="200"  >
+<tr> <td>1</td> <td>5</td> <td>9</td>    </tr>
+<tr> <td>2</td> <td>6</td> <td>10</td>   </tr>
+<tr> <td>3</td> <td>7</td> <td>11</td>   </tr>
+<tr> <td>4</td> <td>8</td> <td>12</td>   </tr>
+
+</table>
+
+</head>
+
+
+<head>
+
+
+  <iframe width="300" height="200"
+  src="https://www.youtube.com/watch?v=pG-dVPBxNqc"
+  frameborder="0" allowfullscreen></iframe>
+
+
+</head>
+
+
+
+
+
+
+
+
+</head>
+
+
+</body>
+
+</html>
